@@ -14,14 +14,6 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 
-// In the Game class, everything related to the chess itself takes place, e.g. initialization of checkers, transfer of checkers and verification of their correctness.
-// With the exception of side-throwing and the chess situation itself, the game works perfectly according to the rules of chess.
-// The game works so that the squares and pieces are in their own 2-dimensional tables that update as the game moves
-// so that in the pcs table, for example, there is always an up-to-date situation about the pieces on the game board
-// It also discusses highlighting the previous move and adding listeners to all checkerboard squares and checkers to
-// game events can be processed.
-// The transfer itself is checked before the transfer is completed, after which the transfer is sent to the Chess Controller, which changes
-// coordinates so that the moved piece is correctly positioned on the opponent's game board
 
 public class Game {
 
