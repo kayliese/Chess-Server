@@ -3,7 +3,7 @@ A two player chess game
 
 ## Project Summary
 
-The project that our group will work on will be a two player chess game. The player will be able to place pieces on a specific square on the main UI in order to play. 
+The player will be able to place pieces on a specific square on the main UI in order to play. 
 Additionally, there will be a chat feature for the players to communicate or discuss the game and dedicated to seeing all of the past moves from the game. 
 
 Server:
