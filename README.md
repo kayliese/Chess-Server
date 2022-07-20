@@ -20,6 +20,7 @@ Data Structures:
 	List data structure will be used specifically an array list to represent the board (8x8 two-dimensional array) each element in the array will identify what piece is occupied on a given square or if that square is empty. 
 We will use a file to store the positions of the game. The file will also be used to read and write the moves that a player makes and display them on the UI 
 
+![Screenshot 2022-07-20 143345](https://user-images.githubusercontent.com/49692061/180057176-87f28f09-03b1-4cf5-8a66-d2a1317c4473.png)
 
 
 ### How do I get set up? ###
