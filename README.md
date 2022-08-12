@@ -1,4 +1,4 @@
-# Chess-Server-
+# Chess-Server
 A two player chess game
 
 ## Project Summary
