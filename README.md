@@ -1,46 +1,43 @@
 # Chess-Server
-A two player chess game
+
+Chess-Server is a two-player chess game that allows players to make moves and communicate with each other through a chat feature.
 
 ## Project Summary
 
-The player will be able to place pieces on a specific square on the main UI in order to play. 
-Additionally, there will be a chat feature for the players to communicate or discuss the game and dedicated to seeing all of the past moves from the game. 
+The game allows players to place pieces on the board using the main UI. The server communicates the game position between the players and updates the UI with each move. The chat feature allows players to communicate or discuss the game with each other.
 
-Server:
-	The server will be what communicates the game position back and forth. Any time a player makes a move, that move should be reflected on the other players screen. The server will also make the chat possible, and communicate the players messages to each other in the chat box. 
+### Server
 
-Client:
-	On the client side, the client will transmit the moves that it makes to the server. It will also transmit any messages that the player types in the chat box.
+The server is responsible for communicating the game position between the players. Whenever a player makes a move, the server updates the board and sends the new position to the other player. The server also handles the chat feature by transmitting the players' messages to each other.
 
+### Client
 
-Rules (for chess pieces) - legal and illegal : 
-      Piece class - each chess piece (Queen, Bishop, King, Pawn, etc) extends the general piece class and within each of the chess pieces there will be a function that keeps track of the legal and illegal moves and capture that a piece can make. 
+The client sends moves and chat messages to the server. It also updates the UI with the new position of the board after each move.
 
-Data Structures:
-	List data structure will be used specifically an array list to represent the board (8x8 two-dimensional array) each element in the array will identify what piece is occupied on a given square or if that square is empty. 
-We will use a file to store the positions of the game. The file will also be used to read and write the moves that a player makes and display them on the UI 
+### Rules
 
-![Screenshot 2022-07-20 143345](https://user-images.githubusercontent.com/49692061/180057176-87f28f09-03b1-4cf5-8a66-d2a1317c4473.png)
+Each chess piece (Queen, Bishop, King, Pawn, etc) extends the general Piece class, which keeps track of the legal and illegal moves that a piece can make. The game uses a list data structure, specifically a two-dimensional array, to represent the board. Each element in the array identifies the piece on a given square or if the square is empty.
 
+### How to Play
 
-### How do I get set up? ###
+1. Download the repository and open the folder in IntelliJ IDE.
+2. Create two applications named "Main" and "Main2" in the "Edit configurations" menu.
+3. Make sure "com.chesserver.Main" is selected under "Build and run".
+4. Run "Main" and input a simple port number, e.g., "123".
+5. Run "Main2" and press "OK".
+6. In the "Main2" application, enter "127.0.0.1" for IP and the port number entered in step 4 (e.g., "123") for Port.
+7. Press "Join".
+8. Start playing!
 
-1. Download Repository and open folder in IntelliJ IDE 
+## User Interface
 
-2. Go to Edit configurations 
+![Chess-Server UI](https://user-images.githubusercontent.com/49692061/180057176-87f28f09-03b1-4cf5-8a66-d2a1317c4473.png)
 
-3. Make 2 Applications and name them Main and Main2
+## Dependencies
 
-4. Under Build and run make sure that it says 'com.chesserver.Main' 
+This project was developed using Java and IntelliJ IDE.
 
-5. Click Apply and OK 
+## Conclusion
 
-6. Run Main and put in a simple port number '123'
+Chess-Server is a simple and fun way to play chess with friends online. It demonstrates the use of Java to create a networked multiplayer game with a graphical user interface.
 
-7. Run Main2 and just press ok 
-
-8. In Main2 application at the top where it says IP type in '127.0.0.1' and Port type in your port number, for example '123'
-
-9. Press Join 
-
-10. You should be able to play a game of chess now 
